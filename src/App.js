@@ -1,15 +1,15 @@
 import './App.css'
-import Movies from './components/Movies'
+import Movies from './components/movies/Movies'
 import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
       <Movies />
       <Footer />
-    </div>
+    </>
   )
 }
 

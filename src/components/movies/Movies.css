@@ -1,0 +1,94 @@
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	max-width: 980px;
+	margin: 80px auto 150px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.contenedor .pelicula {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  background: #312f2f;
+  color: #fff;
+  padding: 12px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.contenedor .pelicula .titulo {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.poster {
+	height: 200px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.pelicula p {
+	line-height: 1.8;
+}
+
+.pagination {
+  position: fixed;
+  bottom: 30px;
+  background: #100a1f;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.pagination button {
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 48px;
+  width: 120px;
+  background: #241744;
+  color: #fff;
+  border-radius: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  transition: 0.3s ease all;
+}
+
+.pagination button:hover {
+  background: #137c32;
+}
+
+.currentPage {
+  color: white;
+}
+
+.currentPage span {
+  margin-left: 20px;
+}
+
+.paginationBtn,
+.paginationNumbers {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}

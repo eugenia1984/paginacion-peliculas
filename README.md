@@ -1,8 +1,8 @@
 # <img src="https://img.icons8.com/clouds/50/null/movies-portal.png"/> Peliculas con paginación
 
-La sexta práctica del curso de **React** con **Codo a Codo**. 
+La sexta práctica del curso de **React** con **Codo a Codo**.
 
-**Consigna**: realizando un **fetch** a una **API** de películas, mostrar las películas con paginación.
+**Consigna**: realizando un **fetch** a una **API** de películas, mostrar las películas con paginación. Y con sweet alert avisarle al usuario si hay un inconveniente al buscar la información a la API
 
 ---
 
@@ -10,25 +10,21 @@ La sexta práctica del curso de **React** con **Codo a Codo**.
 
 :computer: Haciendo click aca(deploy pendiente al terminar proyecto) la pueden probar.
 
-
 ---
-
 
 ## Tecnologías 🛠️
 
+- <img src="https://img.icons8.com/color/30/null/html-5--v1.png"/> **HTML5**
 
--<img src="https://img.icons8.com/color/30/null/html-5--v1.png"/> **HTML5** 
+- <img src="https://img.icons8.com/color/30/null/css3.png"/>**CSS3**
 
--<img src="https://img.icons8.com/color/30/null/css3.png"/>**CSS3**
+- <img src="https://img.icons8.com/color/30/null/javascript--v1.png"/>**JavaScript**
 
--<img src="https://img.icons8.com/color/30/null/javascript--v1.png"/>**JavaScript** 
+- <img src="https://img.icons8.com/plasticine/30/null/react.png"/>**React**, hook **useState**
 
--<img src="https://img.icons8.com/plasticine/30/null/react.png"/>**React**
+- **create-react-app** para armar la aplicación.
 
-
--**create-react-app** para armar la aplicación.
-
-- **dependencias del proyecto**: react, react-dom, react-scripts
+- **dependencias del proyecto**: react, react-dom, react-scripts, [**sweetalert2**](https://sweetalert2.github.io/)
 
 - [**API peliculas: TMDB**](https://www.themoviedb.org/movie?language=es-es).
 
@@ -46,11 +42,11 @@ La sexta práctica del curso de **React** con **Codo a Codo**.
 
 ## Por favor: 🎁
 
-* Comparte este proyecto con otros 📢
+- Comparte este proyecto con otros 📢
 
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
+- Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
 
-* Muchas gracias 🤓.
+- Muchas gracias 🤓.
 
 ---
 
@@ -58,10 +54,9 @@ La sexta práctica del curso de **React** con **Codo a Codo**.
 
 Agradezco su interés en este proyecto ⌨️ con ❤️ de [María Eugenia Costa](https://github.com/eugenia1984) 😊 y sígueme en [LinkedIn](http://www.linkedin.com/in/maríaeugeniacosta)
 
-
----
 ---
 
+---
 
 ### Getting Started with Create React App
 

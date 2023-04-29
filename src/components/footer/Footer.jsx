@@ -1,14 +1,19 @@
 import React from 'react'
+import './Footer.css'
 
 function Footer({ btnPreview, btnNext }) {
   return (
     <footer>
-      <div className="pagination">
-        <button onClick={btnPreview}>Preview</button>
-        <button onClick={btnNext} id="btnSiguiente">
-          Next
-        </button>
-      </div>
+      <p>
+        Diseñado por{' '}
+        <a
+          href="https://www.linkedin.com/in/maríaeugeniacosta"
+          rel="noreferrer"
+          target="_blank"
+        >
+          María Eugenia Costa
+        </a>
+      </p>
     </footer>
   )
 }

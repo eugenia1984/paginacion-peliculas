@@ -17,16 +17,16 @@ La sexta práctica del curso de **React** con **Codo a Codo**.
 ## Tecnologías 🛠️
 
 
--<img src="https://img.icons8.com/color/30/null/html-5--v1.png"/> **HTML5** 
+- <img src="https://img.icons8.com/color/30/null/html-5--v1.png"/> **HTML5** 
 
--<img src="https://img.icons8.com/color/30/null/css3.png"/>**CSS3**
+- <img src="https://img.icons8.com/color/30/null/css3.png"/>**CSS3**
 
--<img src="https://img.icons8.com/color/30/null/javascript--v1.png"/>**JavaScript** 
+- <img src="https://img.icons8.com/color/30/null/javascript--v1.png"/>**JavaScript** 
 
--<img src="https://img.icons8.com/plasticine/30/null/react.png"/>**React**
+- <img src="https://img.icons8.com/plasticine/30/null/react.png"/>**React**
 
 
--**create-react-app** para armar la aplicación.
+- **create-react-app** para armar la aplicación.
 
 - **dependencias del proyecto**: react, react-dom, react-scripts
 

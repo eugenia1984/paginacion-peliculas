@@ -4,7 +4,7 @@ import './Header.css'
 function Header() {
   return (
     <header>
-      <h1>Movies</h1>
+      <h1>100 most popular movies</h1>
     </header>
   )
 }

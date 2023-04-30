@@ -16,9 +16,19 @@ La sexta práctica del curso de **React** con **Codo a Codo**.
 
 - <img src="https://img.icons8.com/color/30/null/html-5--v1.png"/> **HTML5**
 
+<<<<<<< HEAD
 - <img src="https://img.icons8.com/color/30/null/css3.png"/>**CSS3**
 
 - <img src="https://img.icons8.com/color/30/null/javascript--v1.png"/>**JavaScript**
+=======
+- <img src="https://img.icons8.com/color/30/null/html-5--v1.png"/> **HTML5** 
+
+- <img src="https://img.icons8.com/color/30/null/css3.png"/>**CSS3**
+
+- <img src="https://img.icons8.com/color/30/null/javascript--v1.png"/>**JavaScript** 
+
+- <img src="https://img.icons8.com/plasticine/30/null/react.png"/>**React**
+>>>>>>> 69d5dfa74cf49da8a1d04a96b99a552b93a5218c
 
 - <img src="https://img.icons8.com/plasticine/30/null/react.png"/>**React**, hook **useState**
 

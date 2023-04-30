@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Swal from 'sweetalert2'
 import Footer from '../footer/Footer'
 import './Movies.css'
@@ -6,66 +6,74 @@ import './Movies.css'
 function Movies() {
   const [loading, setLoading] = useState(true)
   const [currentPage, setCurrentPage] = useState(1)
+  const [movies, setMovies] = useState([])
 
   const btnPreview = (e) => {
     if (currentPage > 1) {
-      getMovies()
       setCurrentPage(currentPage - 1)
     }
   }
 
   const btnNext = (e) => {
     if (currentPage < 10 && currentPage > 0) {
-      getMovies()
       setCurrentPage(currentPage + 1)
     }
   }
 
-  const getMovies = async () => {
-    try {
-      const respuesta = await fetch(
-        `https://api.themoviedb.org/3/movie/popular?api_key=191528030c357419329af1198edbcb24&language=es-MX&page=${currentPage}`
-      )
+  useEffect(() => {
+    const getMovies = async (currentPage) => {
+      let data = []
+      try {
+        const response = await fetch(
+          `https://api.themoviedb.org/3/movie/popular?api_key=191528030c357419329af1198edbcb24&language=en-US&page=${currentPage}`
+        )
 
-      // if it's ok and I have response with the data
-      if (respuesta.status === 200) {
-        const data = await respuesta.json()
-        setLoading(false)
-        console.log('Data: ', data)
-        let peliculas = ''
-        data.results.forEach((pelicula) => {
-          peliculas += `
-                        <div class="pelicula">
-                            <img class="poster" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
-                            <h3 class="titulo">${pelicula.title}</h3>
-                            <h4>Rating: ${pelicula.vote_average}</h4>
-                            <p>${pelicula.overview}</p>
-                        </div> 
-                      `
-        })
+        if (response.status === 200) {
+          // if it's ok and I have response with the data
+          data = await response.json()
+          data = data.results
+          setLoading(false)
+          setMovies(data)
+        }
 
-        document.getElementById('contenedor').innerHTML = peliculas
+        if (response.status === 401) {
+          // if there is an error I let know the user
+          Swal.fire('Error', 'Incorrect key', 'error')
+        }
+        if (response.status === 404) {
+          Swal.fire('Error', 'Not available', 'error')
+        }
+      } catch (error) {
+        const errorMsg = error.message
+        Swal.fire('Error', errorMsg, 'error')
       }
-
-      // if there is an error I let know the user
-      if (respuesta.status === 401) {
-        Swal.fire('Error', 'Incorrect key', 'error')
-      }
-      if (respuesta.status === 404) {
-        Swal.fire('Error', 'Not available', 'error')
-      }
-    } catch (error) {
-      const errorMsg = error.message
-      Swal.fire('Error', errorMsg, 'error')
     }
-  }
+
+    getMovies(currentPage)
+  }, [currentPage])
 
   const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
   return (
-    <section >
+    <section>
       {loading && <p>Loading movies..</p>}
-      <div className="contenedor" id="contenedor"></div>
+      <div className="contenedor" id="contenedor">
+        {movies.length > 0 &&
+          movies.map((pelicula) => {
+            return (
+              <div className="pelicula" key={pelicula.id}>
+                <img
+                  className="poster"
+                  src={`https://image.tmdb.org/t/p/w500/${pelicula.poster_path}`}
+                  alt="movie"
+                />
+                <h3 className="titulo">{pelicula.title}</h3>
+                <h4>Rating ({pelicula.vote_average})</h4>
+                <p>{pelicula.overview}</p>
+              </div>
+            )
+          })}
+      </div>
       <div className="pagination">
         <div className="paginationBtn">
           <button onClick={btnPreview}>Preview</button>
@@ -77,7 +85,7 @@ function Movies() {
           <p className="currentPage">
             {pages.map((page) =>
               page === currentPage ? (
-                <span style={{ color: 'red' }} key={page}>
+                <span style={styles.currentPage} key={page}>
                   {page}
                 </span>
               ) : (
@@ -93,3 +101,11 @@ function Movies() {
 }
 
 export default Movies
+
+const styles = {
+  currentPage: {
+    backgroundColor: 'red',
+    padding: '6px',
+    borderRadius: '50%'
+  }
+}

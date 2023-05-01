@@ -20,8 +20,6 @@ La sexta práctica del curso de **React** con **Codo a Codo**.
 
 - <img src="https://img.icons8.com/color/30/null/javascript--v1.png"/>**JavaScript**
 
-- <img src="https://img.icons8.com/plasticine/30/null/react.png"/>**React**
-
 - <img src="https://img.icons8.com/plasticine/30/null/react.png"/>**React**, hook **useState**
 
 - **create-react-app** para armar la aplicación.
@@ -34,11 +32,12 @@ La sexta práctica del curso de **React** con **Codo a Codo**.
 
 ## Versión Mobile/Tablet:
 
-![image](https://user-images.githubusercontent.com/72580574/235461428-f367e92d-ca5d-42bb-ae95-19cc1202a1b8.png)
+
+<img src="https://user-images.githubusercontent.com/72580574/235461428-f367e92d-ca5d-42bb-ae95-19cc1202a1b8.png" alt="las 100 peliculas mas populares, version mobil" width=300 >
 
 ## Versión Desktop:
 
-<img src="https://user-images.githubusercontent.com/72580574/235460701-a012a485-0bd6-4ce2-befa-39868d93d100.png" alt="las 100 peliculas mas populares" width=300 >
+<img src="https://user-images.githubusercontent.com/72580574/235460701-a012a485-0bd6-4ce2-befa-39868d93d100.png" alt="las 100 peliculas mas populares, verison tablet" width=300 >
 
 
 ---

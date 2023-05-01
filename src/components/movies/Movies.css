@@ -4,7 +4,7 @@ section {
   justify-content: center;
   align-items: center;
   max-width: 980px;
-  margin: 80px auto 180px;
+  margin: 80px auto 190px;
 }
 
 .contenedor {
@@ -80,4 +80,16 @@ button:enabled {
 
 .paginationNumbers {
   padding: 16px;
+}
+
+@media screen and (max-width: 345px) {
+  .paginationNumbers {
+    padding: 6px 6px 36px 6px;
+  }
+}
+
+@media screen (max-width: 346px) and (max-width: 768px) {
+  .paginationNumbers {
+    padding: 6px 6px 12px 6px;
+  }
 }

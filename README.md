@@ -16,19 +16,11 @@ La sexta práctica del curso de **React** con **Codo a Codo**.
 
 - <img src="https://img.icons8.com/color/30/null/html-5--v1.png"/> **HTML5**
 
-<<<<<<< HEAD
 - <img src="https://img.icons8.com/color/30/null/css3.png"/>**CSS3**
 
 - <img src="https://img.icons8.com/color/30/null/javascript--v1.png"/>**JavaScript**
-=======
-- <img src="https://img.icons8.com/color/30/null/html-5--v1.png"/> **HTML5** 
-
-- <img src="https://img.icons8.com/color/30/null/css3.png"/>**CSS3**
-
-- <img src="https://img.icons8.com/color/30/null/javascript--v1.png"/>**JavaScript** 
 
 - <img src="https://img.icons8.com/plasticine/30/null/react.png"/>**React**
->>>>>>> 69d5dfa74cf49da8a1d04a96b99a552b93a5218c
 
 - <img src="https://img.icons8.com/plasticine/30/null/react.png"/>**React**, hook **useState**
 
@@ -42,11 +34,12 @@ La sexta práctica del curso de **React** con **Codo a Codo**.
 
 ## Versión Mobile/Tablet:
 
-(en construcción)
+![image](https://user-images.githubusercontent.com/72580574/235461428-f367e92d-ca5d-42bb-ae95-19cc1202a1b8.png)
 
 ## Versión Desktop:
 
-(en construcción)
+<img src="https://user-images.githubusercontent.com/72580574/235460701-a012a485-0bd6-4ce2-befa-39868d93d100.png" alt="las 100 peliculas mas populares" width=300 >
+
 
 ---
 

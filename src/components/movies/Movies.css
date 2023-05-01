@@ -3,8 +3,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-	max-width: 980px;
-	margin: 80px auto 150px;
+  max-width: 980px;
+  margin: 80px auto 180px;
 }
 
 .contenedor {
@@ -13,40 +13,10 @@ section {
   gap: 1rem;
 }
 
-.contenedor .pelicula {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 7px;
-  background: #312f2f;
-  color: #fff;
-  padding: 12px;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -o-border-radius: 7px;
-}
-
-.contenedor .pelicula .titulo {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.poster {
-	height: 200px;
-  margin-bottom: 10px;
-  border-radius: 15px;
-}
-
-.pelicula p {
-	line-height: 1.8;
-}
-
 .pagination {
   position: fixed;
   bottom: 30px;
-  background: #100a1f;
+  background: var(--dark-blue);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -64,20 +34,31 @@ section {
   text-align: center;
   height: 48px;
   width: 120px;
-  background: #241744;
-  color: #fff;
+  color: var(--white);
   border-radius: 100px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   transition: 0.3s ease all;
 }
 
-.pagination button:hover {
-  background: #137c32;
+button:disabled {
+  background-color: var(--gray);
+}
+
+button:enabled {
+  background-color: var(--violet);
+}
+
+.gray:hover {
+  background: var(--gray);
+}
+
+.green:hover {
+  background: var(--green);
 }
 
 .currentPage {
-  color: white;
+  color: var(--white);
 }
 
 .currentPage span {
@@ -91,4 +72,12 @@ section {
   align-content: center;
   justify-content: center;
   align-items: center;
+}
+
+.paginationBtn {
+  gap: 12px;
+}
+
+.paginationNumbers {
+  padding: 16px;
 }

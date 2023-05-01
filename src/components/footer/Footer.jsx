@@ -5,7 +5,7 @@ function Footer({ btnPreview, btnNext }) {
   return (
     <footer>
       <p>
-        Diseñado por{' '}
+        Designed by{' '}
         <a
           href="https://www.linkedin.com/in/maríaeugeniacosta"
           rel="noreferrer"

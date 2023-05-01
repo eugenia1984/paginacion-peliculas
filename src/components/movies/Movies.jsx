@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Swal from 'sweetalert2'
+import Movie from '../movie/Movie'
 import Footer from '../footer/Footer'
 import './Movies.css'
 
@@ -58,26 +59,24 @@ function Movies() {
     <section>
       {loading && <p>Loading movies..</p>}
       <div className="contenedor" id="contenedor">
-        {movies.length > 0 &&
-          movies.map((pelicula) => {
-            return (
-              <div className="pelicula" key={pelicula.id}>
-                <img
-                  className="poster"
-                  src={`https://image.tmdb.org/t/p/w500/${pelicula.poster_path}`}
-                  alt="movie"
-                />
-                <h3 className="titulo">{pelicula.title}</h3>
-                <h4>Rating ({pelicula.vote_average})</h4>
-                <p>{pelicula.overview}</p>
-              </div>
-            )
-          })}
+        <Movie movies={movies} />
       </div>
       <div className="pagination">
         <div className="paginationBtn">
-          <button onClick={btnPreview}>Preview</button>
-          <button onClick={btnNext} id="btnSiguiente">
+          <button
+            onClick={btnPreview}
+            id="btnPreview"
+            className={currentPage === 1 ? 'gray' : 'green'}
+            disabled={currentPage === 1}
+          >
+            Preview
+          </button>
+          <button
+            onClick={btnNext}
+            id="btnNext"
+            className={currentPage === 10 ? 'gray' : 'green'}
+            disabled={currentPage === 10}
+          >
             Next
           </button>
         </div>
@@ -104,8 +103,16 @@ export default Movies
 
 const styles = {
   currentPage: {
-    backgroundColor: 'red',
+    backgroundColor: 'white',
     padding: '6px',
-    borderRadius: '50%'
+    borderRadius: '50%',
+    color: '#241744',
+    fontWeight: '900'
+  },
+  btnDisabled: {
+    backgroundColor: 'gray'
+  },
+  btn: {
+    backgroundColor: '#241744'
   }
 }

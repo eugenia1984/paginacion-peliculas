@@ -1,3 +1,13 @@
+:root {
+	--gray: gray;
+	--green: #137c32;
+	--white: white;
+	--violet: #241744;
+	--dark-blue: #100a1f;
+	--dark-gray: #312f2f;
+	--shadow: rgba(0, 0, 0, 0.1);
+}
+
 *, *::before, *::after {
 	margin: 0;
 	padding: 0;

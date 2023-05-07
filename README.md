@@ -6,9 +6,9 @@ La sexta práctica del curso de **React** con **Codo a Codo**.
 
 ---
 
-## Demo (en construcción)
+## Demo 
 
-:computer: Haciendo click aca(deploy pendiente al terminar proyecto) la pueden probar.
+:computer: Haciendo [click aca](https://100-most-popular-movies.netlify.app/) la pueden probar.
 
 ---
 

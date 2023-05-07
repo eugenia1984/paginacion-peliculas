@@ -16,7 +16,11 @@ function Movie({ movies }) {
               />
               <h3 className="titulo">{pelicula.title}</h3>
               <h4>Rating ({pelicula.vote_average})</h4>
-              <p>{pelicula.overview}</p>
+              <p className="line-clamp">
+                {pelicula.overview === 'No overview found'
+                  ? ''
+                  : pelicula.overview}
+              </p>
             </div>
           )
         })}

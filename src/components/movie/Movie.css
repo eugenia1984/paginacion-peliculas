@@ -25,5 +25,16 @@
 }
 
 .pelicula p {
-	line-height: 1.8;
+  line-height: 1.8;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp:hover {
+  -webkit-line-clamp: 100;
 }
